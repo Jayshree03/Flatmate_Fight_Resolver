@@ -14,5 +14,82 @@ FlatMate Fight Resolver is a Spring Boot application designed to help flatmates 
 ✔ API testing using Postman(Postman Collection)
 ✔ Deployed on Heroku 
 
+**Tech Stack**
+Technology                            Description
+Spring Boot	                          Backend framework
+Spring Security	                      Authentication & Authorization
+JWT (JSON Web Token)	                Secure API access
+Hibernate & JPA	                      ORM for database management
+MySQL	                                Relational Database
+Swagger (OpenAPI)	                    API Documentation
+Postman                               API Testing
+GitHub & Git	                        Version Control
+Heroku	                              Cloud Deployment
+
+**Setup and Installation**
+1. Clone git Repository
+  git clone https://github.com/Jayshree03/FlatMate-Fight-Resolver.git
+  cd FlatMate-Fight-Resolver
+
+2. Configure Database
+  a. Create a MySQL database flatmate_db
+  b. In resource folder, change user_name and password in application.properties
+    spring.datasource.username={user_name}
+    spring.datasource.password={password}
+
+3. Access the API:
+  Default server: http://localhost:8080
+  Swagger UI: http://localhost:8080/swagger-ui.html
+ 
+**API Endpoints** 
+1. Authentication API
+  a. Method : POST 
+     Endpoint : /api/auth/register
+  b. Method : POST
+     Endpoint : /api/auth/login
+   
+2. Flatmates API
+  a. Method : POST
+     Endpoint : /api/flatmates/assign
+  b. Method : GET
+     Endpoint : /api/flatmates/{flatCode}/members
+  c. Method : GET
+     Endpoint : /api/flatmates/leaderboard
+
+3. Voting API
+  a. Method : PUT
+     Endpoint : /api/complaints/{id}/vote
+       
+4. Complaint Management API
+  a. Method : PUT
+     Endpoint : /api/complaints/{id}/resolve
+  b. Method : GET
+     Endpoint : /api/complaints
+  c. Method : POST
+     Endpoint : /api/complaints
+  d. Method : GET
+     Endpoint : /api/complaints/trending
+  e. Method : GET
+     Endpoint : /api/complaints/flat/{flatcode}
+
+**Authentication & Security**
+  **JWT Authentication**: Each request to protected routes requires a valid Bearer Token.
+  **Spring Security**: Ensures role-based access control.
+  **CORS Configured**: Allows API access from frontend applications.
+  
+**How to Authenticate in Swagger**
+  Login via /api/auth/login
+  Copy the JWT token from the response
+  Click "Authorize" in Swagger and paste Bearer <your_token>
+
+**Swagger API Documentation**
+  http://localhost:8080/v3/api-docs
+
+**Postmant Collection**
+
+
+**Contributor**
+  Name: Jayshree Gupta
+  Contact: jayshreegupta1020@gmail.com
 
 
