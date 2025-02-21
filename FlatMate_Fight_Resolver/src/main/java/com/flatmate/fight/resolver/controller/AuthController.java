@@ -34,7 +34,7 @@ public class AuthController {
 	
 	@Operation(summary = "Register a new user", description = "Registers a user with username, password, email, and flatCode.")
 	@PostMapping("/register")
-	public ResponseEntity<?> registerUser(@RequestBody User user){
+	public ResponseEntity<?> registerUser(@org.springframework.web.bind.annotation.RequestBody User user){
 		if (user.getFlatCode() == null || user.getFlatCode().isEmpty()) {
             return ResponseEntity.badRequest().body("FlatCode cannot be null or empty");
         }
