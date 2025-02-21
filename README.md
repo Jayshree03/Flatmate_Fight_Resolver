@@ -15,16 +15,16 @@ FlatMate Fight Resolver is a Spring Boot application designed to help flatmates 
 ✔ Deployed on Heroku 
 
 **Tech Stack**
-Technology                            Description
-Spring Boot	                          Backend framework
-Spring Security	                      Authentication & Authorization
-JWT (JSON Web Token)	                Secure API access
-Hibernate & JPA	                      ORM for database management
-MySQL	                                Relational Database
-Swagger (OpenAPI)	                    API Documentation
-Postman                               API Testing
-GitHub & Git	                        Version Control
-Heroku	                              Cloud Deployment
+    Technology                              Description
+1. Spring Boot	                          Backend framework
+2. Spring Security	                      Authentication & Authorization
+3. JWT (JSON Web Token)	                Secure API access
+4. Hibernate & JPA	                      ORM for database management
+5. MySQL	                                Relational Database
+6. Swagger (OpenAPI)	                    API Documentation
+7. Postman                               API Testing
+8. GitHub & Git	                        Version Control
+9. Heroku	                              Cloud Deployment
 
 **Setup and Installation**
 1. Clone git Repository
