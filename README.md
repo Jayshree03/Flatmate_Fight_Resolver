@@ -86,7 +86,7 @@ Heroku	                              Cloud Deployment
   http://localhost:8080/v3/api-docs
 
 **Postmant Collection**
-
+  https://github.com/Jayshree03/Flatmate_Fight_Resolver/blob/main/Flatmate%20Fight%20Resolver.postman_collection.json
 
 **Contributor**
   Name: Jayshree Gupta
