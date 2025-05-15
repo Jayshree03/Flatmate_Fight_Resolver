@@ -38,7 +38,7 @@ FlatMate Fight Resolver is a Spring Boot application designed to help flatmates 
 
 3. Access the API:
   Default server: http://localhost:8080
-  Swagger UI: http://localhost:8080/swagger-ui.html
+  Swagger UI: http://localhost:8080/swagger-ui/index.html
  
 **API Endpoints** 
 1. Authentication API
